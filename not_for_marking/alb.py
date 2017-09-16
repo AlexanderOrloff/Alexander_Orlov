@@ -13,7 +13,8 @@ def download_page(pageURL ):
             html = response.read().decode('ISO-8859-1')
         link = re.search('<!-- next / previous links --(.*?)<a href="(.*?)">', html, re.DOTALL )
         pageURL= 'http://www.forumishqiptar.com/' + link.group(2)
-        
+        if pageURL in links:
+		break
     
     return links
 def cleaning (links):
