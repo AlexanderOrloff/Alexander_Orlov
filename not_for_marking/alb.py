@@ -27,7 +27,7 @@ def cleaning (links):
         regComment = re.compile('<!--.*?-->', flags=re.U | re.DOTALL)  # все комментарии
 
     
-        clean_t = regScript.sub("", t)
+        clean_t = regScript.sub("", html)
         clean_t = regComment.sub("", clean_t)
         clean_t = regTag.sub("", clean_t)
         texts.append(clean_t)
