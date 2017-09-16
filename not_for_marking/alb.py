@@ -31,6 +31,6 @@ def cleaning (links):
         clean_t = regTag.sub("", clean_t)
         texts.append(clean_t)
     print (texts[1])
-cleaning(download_page(pageURL )))
+cleaning(download_page(pageURL )))\
 
 			
