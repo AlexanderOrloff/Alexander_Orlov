@@ -106,5 +106,5 @@ def meta(filepath, title1, date1, topic1, url , year):
           g.write(row % (filepath, title1, date1, topic1, url , year))
           g.write('\n')
           
-#if '__name__' == '__main__'
+
 texts(page_urls())
