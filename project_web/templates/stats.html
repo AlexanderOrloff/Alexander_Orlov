@@ -1,0 +1,81 @@
+<html>
+<head>
+<title> Статистика </title>
+</head>
+<body>
+<table align='center' width = '30%' height='30'>
+		<tr>
+		<td align='center'>
+		<a href="/" style="text-decoration: none; color: black;">Главная</a>
+		</td>
+		<td align='center'>
+		<a href="/stats" style="text-decoration: none; color: black;">Статистика</a>
+		</td>
+		<td align='center'>
+		<a href="/search" style="text-decoration: none; color: black;">Поиск</a>
+		</td>
+		<td align='center'>
+		<a href="/json" style="text-decoration: none; color: black;">json</a>
+		</td>
+</table>
+		
+<h1 align='center'> Статистика </h1>
+
+<form action='/'>
+
+			<div style=" width:200px;height:200px; Background-color: #0101DF; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[0] %}
+			 {{word.replace('_',' ') | safe}} ({{data[0][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #2E9AFE; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[1] %}
+			 {{word.replace('_',' ') | safe}} ({{data[1][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #01A9DB; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[2] %}
+			 {{word.replace('_',' ') | safe}} ({{data[2][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #04B4AE; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[3] %}
+			 {{word.replace('_',' ') | safe}} ({{data[3][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #A9BCF5; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[4] %}
+			 {{word.replace('_',' ') | safe}} ({{data[4][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #2EFEF7; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[5] %}
+			 {{word.replace('_',' ') | safe}} ({{data[5][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #58D3F7; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[6] %}
+			 {{word.replace('_',' ') | safe}} ({{data[6][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #81F7F3; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[7] %}
+			 {{word.replace('_',' ') | safe}} ({{data[7][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #04B486; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[8] %}
+			 {{word.replace('_',' ') | safe}} ({{data[8][word]}});  
+			{% endfor %}
+			</p>
+			<div style=" width:200px;height:200px; Background-color: #0B2F3A; margin-left: 42%" ></div>
+			<p align = "center">{% for word in data[9] %}
+			 {{word.replace('_',' ') | safe}} ({{data[9][word]}});  
+			{% endfor %}
+			</p>
+			
+			
+		
+		
+</body>
+</html>
