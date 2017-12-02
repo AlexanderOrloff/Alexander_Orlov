@@ -1,0 +1,18 @@
+Structure Query Language
+DBMS - dat base managment system
+primery key - уникальность - не повторяется ни у одного ряда
+CREATE
+SELECT
+INSERT
+UPDATE
+DROP
+DELETE
+WHERE
+AND, NOT, BETWEEN, OR
+SELECT column, another_column, …
+FROM mytable
+INNER JOIN another_table 
+    ON mytable.id = another_table.id
+WHERE condition(s)
+ORDER BY column ASC/DESC вверх -вниз
+LIMIT num_limit OFFSET num_offset; с какого ряда считаем
