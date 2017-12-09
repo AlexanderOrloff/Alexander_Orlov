@@ -1,3 +1,4 @@
+#всю копипасту можно рещить функциями
 import re
 import matplotlib.pyplot as plt
 with open ("phon.txt", "r") as f:
