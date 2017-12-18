@@ -55,7 +55,7 @@ def mystem(index, line):
     d[line] = new_line  # создаётся словарь соответствий: ключ - наша орфографию, значение - дореволюц
     return d
 
-def counter(d):
+def counter(d): #ищем самую частотную словоформу
    num = {}
    for  key in d.keys():
        arr = key.split()
