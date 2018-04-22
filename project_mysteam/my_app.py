@@ -1,4 +1,3 @@
-
 from pymorphy2 import MorphAnalyzer
 from flask import Flask
 import flask
@@ -87,7 +86,7 @@ def send_welcome(message):
 def my_function(message):
     vocab = vocabulary()
     pos = partsofspeach(vocab)
-    text = new_one(vocab, pos, message)
+    text = new_one(vocab, pos, message.text)
     bot.send_message(message.chat.id, text)  # отправляем в чат наш ответ
 
 @app.route('/', methods=['GET', 'HEAD'])
@@ -103,6 +102,3 @@ def webhook():
         return ''
     else:
         flask.abort(403)
-
-
-
