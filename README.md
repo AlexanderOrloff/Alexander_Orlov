@@ -1,2 +1,2 @@
 # Alexander_Orlov
-@TestAndHWBot
+@orlovalex_bot
